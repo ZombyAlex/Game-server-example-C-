@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <StartupObject></StartupObject>
+    <BaseOutputPath>..\Test\</BaseOutputPath>
+    <AssemblyName>SWFServer</AssemblyName>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <OutputPath>c:\Projects\SWF\Server\</OutputPath>
+    <Platforms>AnyCPU;x64</Platforms>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+
+  <ItemGroup>
+    <PackageReference Include="ComponentAce.Compression.Libs.zlib" Version="1.0.4" />
+    <PackageReference Include="Lidgren.Network" Version="1.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="C:\Windows\System32\xcopy /Y/Q  &quot;$(ProjectDir)Data&quot;  &quot;$(ProjectDir)..\SWFClient\Assets\Plugins\Data&quot;&#xD;&#xA;C:\Windows\System32\xcopy /Y/Q  &quot;$(ProjectDir)Data\Net&quot;  &quot;$(ProjectDir)..\SWFClient\Assets\Plugins\Data\Net&quot;&#xD;&#xA;C:\Windows\System32\xcopy /Y/Q  &quot;$(ProjectDir)Data\Entities&quot;  &quot;$(ProjectDir)..\SWFClient\Assets\Plugins\Data\Entities&quot;&#xD;&#xA;C:\Windows\System32\xcopy /Y/Q  &quot;$(ProjectDir)Data\Data&quot;  &quot;$(ProjectDir)..\SWFClient\Assets\Plugins\Data\Data&quot;&#xD;&#xA;C:\Windows\System32\xcopy /Y/Q  &quot;$(ProjectDir)Data\Data&quot;  &quot;$(ProjectDir)..\Server&quot;" />
+  </Target>
+
+</Project>

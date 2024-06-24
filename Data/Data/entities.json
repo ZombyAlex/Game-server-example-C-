@@ -1,0 +1,1061 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "ground1",
+      "layer": "ground",
+      "speedMove": 2.0
+    },
+    {
+      "id": 2,
+      "name": "ground2",
+      "layer": "ground",
+      "speedMove": 2.0
+    },
+    {
+      "id": 3,
+      "name": "ground3",
+      "layer": "ground",
+      "speedMove": 2.5
+    },
+    {
+      "id": 4,
+      "name": "ground_water",
+      "layer": "ground",
+      "isMove": false,
+      "isWater": true
+    },
+
+
+    {
+      "id": 10,
+      "name": "floor_wood",
+      "layer": "floor",
+      "costCraft": 5,
+      "speedMove": 3.0,
+      "stackCount": 1000,
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 4,
+        "items": [
+          {
+            "id": "wood",
+            "count": 10
+          }
+        ]
+      },
+      "build": {
+        "cost": 0,
+        "locations": [
+          "world"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "floor_stone",
+      "layer": "floor",
+      "costCraft": 5,
+      "speedMove": 3.5,
+      "stackCount": 1000,
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 4,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 10
+          }
+        ]
+      },
+      "build": {
+        "cost": 0,
+        "locations": [
+          "world"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "floor_brick",
+      "layer": "floor",
+      "costCraft": 5,
+      "speedMove": 4.0,
+      "stackCount": 1000,
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 4,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 20
+          }
+        ]
+      },
+      "build": {
+        "cost": 0,
+        "locations": [
+          "world"
+        ]
+      }
+    },
+
+
+
+
+    {
+      "id": 101,
+      "name": "fir",
+      "layer": "block",
+      "isMove": false,
+      "res": [
+        {
+          "id": "wood",
+          "count": 5
+        }
+      ],
+      "toolMining": {
+        "type": "axe",
+        "level": 0
+      }
+    },
+    {
+      "id": 102,
+      "name": "stone",
+      "layer": "block",
+      "isMove": false,
+      "res": [
+        {
+          "id": "stone_item",
+          "count": 5
+        }
+      ],
+      "toolMining": {
+        "type": "pick",
+        "level": 0
+      }
+    },
+    {
+      "id": 103,
+      "name": "bush",
+      "layer": "block",
+      "isMove": false,
+      "res": [
+        {
+          "id": "berry",
+          "count": 2
+        },
+        {
+          "id": "wood",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "bush2",
+      "layer": "block",
+      "speedMove": 1.0,
+      "isMove": true,
+      "res": [
+        {
+          "id": "berry",
+          "count": 2
+        },
+        {
+          "id": "wood",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "wall_wood",
+      "layer": "block",
+      "isMove": false
+    },
+
+    {
+      "id": 108,
+      "name": "bed_wood",
+      "layer": "block",
+      "costCraft": 100,
+      "speedMove": 1.0,
+      "durability": 100,
+      "isMove": false,
+      "isSleep": true,
+      "size": {
+        "x": 2,
+        "y": 1
+      },
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "wood",
+            "count": 100
+          }
+        ]
+      },
+      "build": {
+        "cost": 0,
+        "locations": [
+          "house_wood"
+        ]
+      },
+      "isTake": true
+    },
+    {
+      "id": 109,
+      "name": "wood_shower",
+      "layer": "block",
+      "speedMove": 1.0,
+      "isBlockUnit": true,
+      "isShower": true
+    },
+    {
+      "id": 110,
+      "name": "table_wood",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "durability": 100,
+      "tradeSize": 5
+    },
+
+
+    {
+      "id": 113,
+      "name": "fir2",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "res": [
+        {
+          "id": "wood",
+          "count": 5
+        }
+      ],
+      "toolMining": {
+        "type": "axe",
+        "level": 1
+      }
+    },
+    {
+      "id": 114,
+      "name": "stone2",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "res": [
+        {
+          "id": "stone_item",
+          "count": 5
+        }
+      ],
+      "toolMining": {
+        "type": "pick",
+        "level": 1
+      }
+    },
+    {
+      "id": 115,
+      "name": "house",
+      "layer": "block",
+      "costCraft": 1000,
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "isExit": true,
+      "exit": {
+        "x": 0,
+        "y": 2
+      },
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 30,
+        "items": [
+          {
+            "id": "wood",
+            "count": 5000
+          },
+          {
+            "id": "stone_item",
+            "count": 1000
+          }
+        ]
+      },
+      "durability": 1000,
+      "build": {
+        "cost": 10,
+        "locations": [
+          "world"
+        ],
+        "location": "house_wood"
+      }
+    },
+    {
+      "id": 116,
+      "name": "wall_stone",
+      "layer": "block",
+      "isMove": false
+    },
+    {
+      "id": 117,
+      "name": "exit_stone",
+      "layer": "block",
+      "isMove": true,
+      "size": {
+        "x": 2,
+        "y": 1
+      },
+      "isExit": true,
+      "exit": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 118,
+      "name": "location_respawn",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 6,
+        "y": 6
+      },
+      "isExit": true,
+      "exit": {
+        "x": 2,
+        "y": 6
+      },
+      "durability": 1000
+    },
+    {
+      "id": 119,
+      "name": "stone_small",
+      "layer": "block",
+      "isMove": true,
+      "res": [
+        {
+          "id": "stone_item",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "wood_small",
+      "layer": "block",
+      "isMove": true,
+      "res": [
+        {
+          "id": "wood",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "location_work1",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 4,
+        "y": 4
+      },
+      "isExit": true,
+      "exit": {
+        "x": 1,
+        "y": 4
+      },
+      "durability": 1000
+    },
+    {
+      "id": 122,
+      "name": "exit_wood",
+      "layer": "block",
+      "isMove": true,
+      "size": {
+        "x": 2,
+        "y": 1
+      },
+      "isExit": true,
+      "exit": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 123,
+      "name": "workbench",
+      "layer": "block",
+      "costCraft": 100,
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "workbenchType": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "wood",
+            "count": 2000
+          },
+          {
+            "id": "stone_item",
+            "count": 500
+          }
+        ]
+      },
+      "durability": 100,
+      "build": {
+        "cost": 0,
+        "locations": [
+          "factory1"
+        ]
+      },
+      "isTake": true
+    },
+    {
+      "id": 124,
+      "name": "container_wood",
+      "layer": "block",
+      "costCraft": 100,
+      "isMove": false,
+      "containerSize": 20,
+      "isLargeSize": true,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "wood",
+            "count": 2000
+          },
+          {
+            "id": "stone_item",
+            "count": 500
+          }
+        ]
+      },
+      "durability": 100,
+      "build": {
+        "cost": 0,
+        "locations": [
+          "house_wood",
+          "factory1"
+        ]
+      },
+      "isTake": true
+    },
+    {
+      "id": 125,
+      "name": "location_rent1",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 4,
+        "y": 4
+      },
+      "isExit": true,
+      "exit": {
+        "x": 1,
+        "y": 4
+      },
+      "durability": 1000
+    },
+    {
+      "id": 126,
+      "name": "monument_sigma",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "id": 127,
+      "name": "monument_space",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "id": 128,
+      "name": "factory1",
+      "layer": "block",
+      "costCraft": 1000,
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "isExit": true,
+      "exit": {
+        "x": 0,
+        "y": 2
+      },
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 30,
+        "items": [
+          {
+            "id": "wood",
+            "count": 5000
+          },
+          {
+            "id": "stone_item",
+            "count": 1000
+          }
+        ]
+      },
+      "durability": 1000,
+      "build": {
+        "cost": 10,
+        "locations": [
+          "world"
+        ],
+        "location": "factory1"
+      }
+    },
+    {
+      "id": 129,
+      "name": "monument_gueng",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "id": 130,
+      "name": "barrel_wood",
+      "layer": "block",
+      "costCraft": 100,
+      "isMove": false,
+      "containerSize": 1,
+      "isLargeSize": true,
+      "isLiquidContainer": true,
+      "liquidSize": 1000,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "wood",
+            "count": 2000
+          },
+          {
+            "id": "stone_item",
+            "count": 500
+          }
+        ]
+      },
+      "durability": 100,
+      "build": {
+        "cost": 0,
+        "locations": [
+          "house_wood"
+        ]
+      },
+      "isTake": true,
+      "isEquip": true
+    },
+    {
+      "id": 131,
+      "name": "cave",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 3,
+        "y": 3
+      },
+      "isExit": true,
+      "exit": {
+        "x": 1,
+        "y": 3
+      },
+      "durability": 1000
+    },
+    {
+      "id": 132,
+      "name": "cave2",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "isExit": true,
+      "exit": {
+        "x": 0,
+        "y": 2
+      },
+      "durability": 1000
+    },
+    {
+      "id": 133,
+      "name": "ore_coal",
+      "layer": "block",
+      "isMove": false,
+      "res": [
+        {
+          "id": "coal",
+          "count": 5
+        }
+      ],
+      "toolMining": {
+        "type": "pick",
+        "level": 0
+      }
+    },
+    {
+      "id": 134,
+      "name": "ore_iron",
+      "layer": "block",
+      "isMove": false,
+      "res": [
+        {
+          "id": "iron",
+          "count": 5
+        }
+      ],
+      "toolMining": {
+        "type": "pick",
+        "level": 0
+      }
+    },
+    {
+      "id": 135,
+      "name": "ore_coal2",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "res": [
+        {
+          "id": "coal",
+          "count": 50
+        }
+      ],
+      "toolMining": {
+        "type": "pick",
+        "level": 0
+      }
+    },
+    {
+      "id": 136,
+      "name": "ore_iron2",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "res": [
+        {
+          "id": "iron",
+          "count": 50
+        }
+      ],
+      "toolMining": {
+        "type": "pick",
+        "level": 0
+      }
+    },
+    {
+      "id": 137,
+      "name": "fir3",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 3,
+        "y": 3
+      },
+      "res": [
+        {
+          "id": "wood",
+          "count": 100
+        }
+      ],
+      "toolMining": {
+        "type": "axe",
+        "level": 1
+      }
+    },
+    {
+      "id": 138,
+      "name": "furnance_stone",
+      "layer": "block",
+      "costCraft": 100,
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "workbenchType": "furnance",
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 2000
+          },
+          {
+            "id": "bar_iron",
+            "count": 250
+          }
+        ]
+      },
+      "durability": 25000,
+      "build": {
+        "cost": 0,
+        "locations": [
+          "factory1"
+        ]
+      },
+      "isTake": true
+    },
+    {
+      "id": 139,
+      "name": "sawmill_wood",
+      "layer": "block",
+      "costCraft": 100,
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "workbenchType": "sawmill",
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 2000
+          },
+          {
+            "id": "bar_iron",
+            "count": 250
+          }
+        ]
+      },
+      "durability": 25000,
+      "build": {
+        "cost": 0,
+        "locations": [
+          "factory1"
+        ]
+      },
+      "isTake": true
+    },
+    {
+      "id": 140,
+      "name": "masons_workshop",
+      "layer": "block",
+      "costCraft": 100,
+      "isMove": false,
+      "size": {
+        "x": 2,
+        "y": 2
+      },
+      "workbenchType": "masons_workshop",
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 10,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 2000
+          },
+          {
+            "id": "bar_iron",
+            "count": 250
+          }
+        ]
+      },
+      "durability": 25000,
+      "build": {
+        "cost": 0,
+        "locations": [
+          "factory1"
+        ]
+      },
+      "isTake": true
+    },
+    {
+      "id": 141,
+      "name": "location_buying",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 4,
+        "y": 4
+      },
+      "isExit": true,
+      "exit": {
+        "x": 1,
+        "y": 4
+      },
+      "durability": 1000
+    },
+    {
+      "id": 142,
+      "name": "location_shop",
+      "layer": "block",
+      "isMove": false,
+      "size": {
+        "x": 4,
+        "y": 4
+      },
+      "isExit": true,
+      "exit": {
+        "x": 1,
+        "y": 4
+      },
+      "durability": 1000
+    },
+
+
+
+
+
+
+
+
+    {
+      "id": 1000,
+      "name": "items",
+      "layer": "item"
+    },
+    {
+      "id": 1001,
+      "name": "wood",
+      "layer": "item",
+      "stackCount": 1000,
+      "timeMining": 2,
+      "miningType": "wood",
+      "costSell": 2
+    },
+    {
+      "id": 1002,
+      "name": "stone_item",
+      "layer": "item",
+      "stackCount": 1000,
+      "timeMining": 3,
+      "miningType": "ore",
+      "costSell": 3
+    },
+    {
+      "id": 1003,
+      "name": "berry",
+      "layer": "item",
+      "stackCount": 1000,
+      "timeMining": 2,
+      "miningType": "plant",
+      "costSell": 2
+    },
+    {
+      "id": 1004,
+      "name": "axe_stone",
+      "layer": "item",
+      "costCraft": 10,
+      "stackCount": 1,
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 5,
+        "items": [
+          {
+            "id": "wood",
+            "count": 5
+          },
+          {
+            "id": "stone_item",
+            "count": 5
+          }
+        ]
+      },
+      "durability": 50,
+      "tool": {
+        "type": "axe",
+        "level": 0
+      },
+      "timeMining": 1,
+      "isEquip": true,
+      "costSell": 25
+    },
+    {
+      "id": 1005,
+      "name": "pick_stone",
+      "layer": "item",
+      "costCraft": 10,
+      "stackCount": 1,
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 5,
+        "items": [
+          {
+            "id": "wood",
+            "count": 5
+          },
+          {
+            "id": "stone_item",
+            "count": 5
+          }
+        ]
+      },
+      "durability": 50,
+      "tool": {
+        "type": "pick",
+        "level": 0
+      },
+      "timeMining": 1,
+      "isEquip": true,
+      "costSell": 25
+    },
+    {
+      "id": 1006,
+      "name": "water",
+      "layer": "item",
+      "stackCount": 1000,
+      "isLiquid": true,
+      "isWater": true
+    },
+    {
+      "id": 1007,
+      "name": "bottle",
+      "layer": "item",
+      "stackCount": 1,
+      "containerSize": 1,
+      "isLiquidContainer": true,
+      "liquidSize": 10,
+      "isUse": true,
+      "workbenchCraft": "workbench",
+      "craft": {
+        "time": 5,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 1
+          }
+        ]
+      },
+      "durability": 10,
+      "isEquip": true,
+      "costSell": 50
+    },
+    {
+      "id": 1008,
+      "name": "coal",
+      "layer": "item",
+      "stackCount": 1000,
+      "timeMining": 4,
+      "miningType": "ore",
+      "costSell": 4
+    },
+    {
+      "id": 1009,
+      "name": "iron",
+      "layer": "item",
+      "stackCount": 1000,
+      "timeMining": 5,
+      "miningType": "ore",
+      "costSell": 5
+    },
+    {
+      "id": 1010,
+      "name": "bar_iron",
+      "layer": "item",
+      "stackCount": 1000,
+      "workbenchCraft": "furnance",
+      "craft": {
+        "time": 5,
+        "items": [
+          {
+            "id": "iron",
+            "count": 1
+          },
+          {
+            "id": "coal",
+            "count": 1
+          }
+        ]
+      },
+      "costSell": 10
+    },
+    {
+      "id": 1011,
+      "name": "wooden_plank",
+      "layer": "item",
+      "stackCount": 1000,
+      "workbenchCraft": "sawmill",
+      "craft": {
+        "time": 5,
+        "items": [
+          {
+            "id": "wood",
+            "count": 1
+          }
+        ]
+      },
+      "costSell": 4
+    },
+    {
+      "id": 1012,
+      "name": "stone_block",
+      "layer": "item",
+      "stackCount": 1000,
+      "workbenchCraft": "masons_workshop",
+      "craft": {
+        "time": 5,
+        "items": [
+          {
+            "id": "stone_item",
+            "count": 1
+          }
+        ]
+      },
+      "costSell": 6
+    },
+
+
+
+    {
+      "id": 10001,
+      "name": "unit",
+      "layer": "unit"
+    }
+  ]
+}
